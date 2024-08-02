@@ -4,40 +4,81 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Lucefărul muzical</title>
+  <title>Luceafărul Muzical</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+
   <style>
+    .icon-container {
+      position: fixed;
+      top: 10px; /* Distanța de sus */
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 20px; /* Spatiu intre icoane */
+    }
 
-.icon-container {
-    position: fixed;
-    top: 10px; /* Distanța de sus */
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 20px; /* Spatiu intre icoane */
-}
+    .icon {
+      display: inline-block;
+    }
 
-.icon {
-    display: inline-block;
-}
+    .icon img {
+      width: 50px; /* Latimea icoanei */
+      height: 50px; /* Inaltimea icoanei */
+    }
 
-.icon img {
-    width: 50px; /* Latimea icoanei */
-    height: 50px; /* Inaltimea icoanei */
-}
+    .gruppo-font {
+      font-family: 'Gruppo', sans-serif;
+      text-decoration: none; /* Elimină sublinierea */
+      color: inherit; /* Asigură culoarea textului de bază */
+    }
 
+    .bruno-font {
+      font-family: 'Bruno Ace SC', sans-serif;
+    }
 
+    .large-icon i {
+      font-size: 40px; /* Dimensiune mai mare pentru icoane */
+    }
+
+    /* Stiluri pentru secțiunea de erou */
+    #hero {
+      position: relative;
+      height: 100vh;
+      background: url('assets/img/hero-bg.jpg') center center no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white; /* Asigură vizibilitatea textului */
+    }
+
+    /* Alte ajustări de stil */
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .dark-background {
+      background-color: rgba(0, 0, 0, 0.5); /* Fundal întunecat cu transparență */
+    }
+
+    .section {
+      padding: 60px 0;
+    }
   </style>
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -48,21 +89,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
-
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
@@ -71,38 +102,24 @@
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">Luceafărul Muzical</h1>
+      <h5 class="sitename">Social media:</h5>
     </a>
 
     <div class="social-links text-center">
-
-      
       <a href="https://www.facebook.com/profile.php?id=61563267185865" class="facebook"><i class="bi bi-facebook"></i></a>
       <a href="https://www.instagram.com/luceafarul.muzical/" class="instagram"><i class="bi bi-instagram"></i></a>
       <a href="#" class="linkedin"><i class="bi bi-tiktok"></i></a>
-      
-
     </div>
-
-    
-
-<br>
+    <br>
   </header>
   
   <main class="main">
-
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
-
-
-      
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h1><div class="social-links text-center">
+        
 
+        <div class="social-links text-center large-icon">
           <a href="https://www.youtube.com/@Luceaf%C4%83rulMuzical" class="linkedin"><i class="bi bi-youtube"></i></a>
           <a href="#" class="linkedin"><i class="bi bi-spotify"></i></a>
           <a href="#" class="linkedin"><i class="bi bi-apple"></i></a>
@@ -110,31 +127,25 @@
           <a href="#" class="linkedin"><i class="fab fa-deezer"></i></a>
           <a href="#" class="linkedin"><i class="fab fa-napster"></i></a>
           <a href="#" class="linkedin"><i class="fab fa-soundcloud"></i></a>
-          
-    
-        </div></h1>
-        <p>Când muzica și stelele se întâlnesc, <span class="typed" data-typed-items="sufletul dansează în lumina lor."></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-     
+        </div>
+<br>
+        <h1 class="bruno-font">Luceafărul Muzical</h1>
+        <p>
+          <span class="gruppo-font">Unde muzica și stelele</span>
+          <span class="gruppo-font typed" data-typed-items="se împletesc ✨🎧"></span>
+          <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+        </p>
 
-    </section><!-- /Hero Section -->
-
-    
-
-   
-
-
-
+      </div>
+    </section>
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
-
     <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Luceafărul Muzical</strong> </p>
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong>Luceafărul Muzical</strong> </p>
       </div>
-      
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
@@ -157,7 +168,6 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
