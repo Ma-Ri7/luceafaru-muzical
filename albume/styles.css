@@ -1,0 +1,240 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.album-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.album-section h2 {
+    font-size: 28px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.divider {
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    margin: 10px auto;
+    position: relative;
+}
+
+.divider::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.album-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.album-image {
+    flex: 1;
+    padding: 20px;
+    max-width: 100%; /* Ensures image doesn't overflow */
+}
+
+.album-image img {
+    width: 100%; /* Makes image responsive */
+    height: auto;
+    border-radius: 10px;
+}
+
+.album-details {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    max-width: 100%; /* Ensures details section doesn't overflow */
+}
+
+.album-details h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.album-details p {
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.song-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.song-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Allows wrapping of long text */
+}
+
+.song-list li span {
+    font-size: 18px;
+    flex: 1;
+    margin-right: 100px; /* Reduced margin */
+}
+
+.icons {
+    display: flex;
+    gap: 20px; /* Reduced spacing between icons */
+    margin-left: 10px; /* Reduced margin between text and icons */
+}
+
+.icons a {
+    color: rgb(87, 100, 151);
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.album-links {
+    margin-top: 30px;
+}
+
+.album-links p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.album-links a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.album-links a:hover {
+    background-color: #f0f0f0;
+}
+
+.album-links .itunes i,
+.album-links .spotify i {
+    margin-right: 8px;
+}
+
+.album-links .itunes {
+    background-color: white;
+}
+
+.album-links .spotify {
+    background-color: #1DB954;
+    color: white;
+    border: none;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .album-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .album-image, .album-details {
+        max-width: 90%; /* Smaller max-width for mobile */
+    }
+
+    .song-list li {
+        flex-direction: column; /* Stack song title and icons */
+        align-items: flex-start; /* Align items to start */
+    }
+
+    .icons {
+        margin-top: 5px; /* Adds space above icons when stacked */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .album-section {
+        padding: 20px;
+    }
+
+    .album-section h2 {
+        font-size: 22px;
+    }
+
+    .album-details h3 {
+        font-size: 20px;
+    }
+
+    .song-list li span {
+        font-size: 16px;
+    }
+
+    .album-links a {
+        font-size: 16px;
+        padding: 8px 15px;
+        margin: 5px 5px; /* Adjust spacing for smaller screens */
+    }
+}
+
+
+
+.song-list li .play-button {
+    margin-right: 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+} 
+/* Existing styles... */
+
+@media (max-width: 768px) {
+    .song-list li {
+        flex-wrap: nowrap;
+    }
+
+   
+
+    .song-list li span {
+        flex: 1;
+        font-size: 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .icons {
+        margin-left: 10px;
+        flex-shrink: 0;
+    }
+}
+.bruno-font {
+    font-family: 'Bruno Ace SC', sans-serif;
+  }
+  .Titillium {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 900; /* Regular weight for paragraphs */
+  }
+  .Anton {
+    font-family: 'Anton', sans-serif;
+    font-weight: 900; /* Regular weight for paragraphs */
+  }
+
+.archivo {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 400; /* Regular weight for paragraphs */
+}
+
+.melodii {
+    font-family: 'Comfortaa', sans-serif;
+}
