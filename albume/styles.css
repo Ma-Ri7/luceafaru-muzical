@@ -238,3 +238,45 @@ body {
 .melodii {
     font-family: 'Comfortaa', sans-serif;
 }
+
+.tracks {
+    flex: 1;
+}
+
+.track {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.track button {
+    margin-right: 10px;
+}
+
+.player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-controls button {
+    margin: 0 10px;
+}
+
+#seekBar {
+    width: 100%;
+    margin: 10px 0;
+}
